@@ -1,0 +1,161 @@
+@import "reset.css";
+@import "variables/colors.css";
+@import "variables/typography.css";
+
+body {
+  background-image: url("/Users/azizzakiryarov/Documents/workspace-web/CV/src/pictures/backgr.jpg");
+  background-repeat: space;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.header h3,
+#photo {
+  float: left;
+}
+
+.education,
+.experience,
+.language,
+.private,
+.qa {
+  clear: both;
+}
+
+#name {
+  padding-left: 400px;
+  padding-top: 30px;
+}
+
+#details {
+  color: var(--color-secondary);
+  font-style: italic;
+  padding-left: 400px;
+  padding-top: 5px;
+  font-size: 30px;
+}
+
+.image img {
+  width: 300px;
+  height: 300px;
+  margin-left: 1300px;
+  margin-top: -140px;
+  background-size: cover;
+  display: block;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+
+.image img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.header h3 {
+  font-size: 100px;
+  margin-left: 25px;
+  margin-top: 30px;
+  color: var(--color-primary);
+  text-shadow: 2px 2px #555;
+}
+
+#name {
+  font-size: 45px;
+}
+
+a {
+  color: var(--color-secondary);
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+.education h3 {
+  font-size: 50px;
+  color: var(--color-primary);
+  padding: -500px;
+}
+
+.experience h3 {
+  font-size: 45px;
+  color: var(--color-primary);
+  padding: -500px;
+}
+
+.language h3 {
+  font-size: 50px;
+  color: var(--color-primary);
+  padding: -500px;
+}
+
+.private h3 {
+  font-size: 50px;
+  color: var(--color-primary);
+  padding: -500px;
+}
+
+.questions-answers h3 {
+  font-size: 38px;
+  color: var(--color-primary);
+  padding: -500px;
+}
+
+.experience,
+.language,
+.private {
+  margin-top: 20px;
+}
+
+.date-range,
+.lang {
+  font-weight: bold;
+  padding-left: 400px;
+  margin-bottom: 3px;
+}
+
+.description {
+  padding-left: 400px;
+  margin-bottom: 3px;
+}
+
+.lang {
+  font-weight: bold;
+  padding-left: 400px;
+}
+
+#private-title {
+  padding-left: 400px;
+  font-weight: bold;
+}
+
+#private-description {
+  padding-top: -10px;
+  padding-left: 400px;
+  margin-bottom: 3px;
+  text-align: left;
+}
+
+#qa-description {
+  padding-left: 400px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.footer p,
+i {
+  float: left;
+  background-color: var(--color-secondary);
+  color: white;
+  width: 20%;
+  text-align: center;
+  height: 30px;
+  padding-top: 10px;
+}
+
+.footer i:hover {
+  color: var(--color-primary);
+}

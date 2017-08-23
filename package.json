@@ -1,0 +1,27 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "process-images": "cp -r src/pictures dist/pictures",
+    "process-css": "postcss -o dist/css/master.css src/css/style.css",
+    "process-html": "html-minifier --remove-comments --output-dir dist --input-dir src --file-ext html",
+    "css-lint": "node node_modules/stylelint/lib/cli.js 'src/css/**/*.css'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run css-lint && npm run process-images && npm run process-css && npm run process-html"
+  },
+  "author": "Aziz Zakiryarov",
+  "license": "ISC",
+  "dependencies": {
+    "stylelint": "^8.0.0",
+    "stylelint-config-standard": "^17.0.0"
+  },
+  "devDependencies": {
+    "cssnano": "^3.10.0",
+    "html-minifier": "^3.5.3",
+    "postcss-cli": "^4.1.0",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^10.0.0"
+  }
+}
