@@ -3,7 +3,7 @@
 @import "variables/typography.css";
 
 body {
-  background-image: url("/Users/azizzakiryarov/Documents/workspace-web/CV/src/pictures/backgr.jpg");
+  background-image: url("../pictures/backgr.jpg");
   background-repeat: space;
   background-attachment: fixed;
   background-position: center;
@@ -145,8 +145,8 @@ a:hover {
   text-align: left;
 }
 
-.footer p,
-i {
+.footer i,
+.copyright p {
   float: left;
   background-color: var(--color-secondary);
   color: white;
